@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quizz/widgets/Quizz.dart';
 
 class Home extends StatefulWidget {
   Home({Key key, this.title}) : super(key: key);
@@ -11,7 +12,9 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   void _onPressed() {
-
+    Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) =>
+      new Quizz()
+    ));
   }
 
   @override

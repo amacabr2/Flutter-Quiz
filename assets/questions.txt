@@ -1,0 +1,11 @@
+Paris est la capitale de la Franche ? | TRUE | Et oui, Paris est bien notre capitale | paris.jpg
+Les BCAA sont des acides amin�s essentiels en Musculation ? | TRUE | exliquation manquante | bccaa.jpg
+Limoges est la plus grande ville du monde ? | FALSE | exliquation manquante | limoges.jpg
+La lune est une plan�te ? | FALSE | exliquation manquante | lune.jpg
+Twitter est le r�seau social le plus utilis� ? | FALSE | exliquation manquante | twitter.jpg
+Flutter est un langage de programmation ? | FALSE | exliquation manquante| flutter.jpg
+Minecraft est un jeu vid�o ? | TRUE | exliquation manquante | minecraft.jpg
+Lucifer est une s�rie original Netflix ? | TRUE | exliquation manquante | lucifer.jpg
+Louis XVI s'est suicid� ? | FALSE | exliquation manquante| louisxvi.jpg
+Les prochains JO seront � Paris ? | TRUE| exliquation manquante | jo.jpg
+
