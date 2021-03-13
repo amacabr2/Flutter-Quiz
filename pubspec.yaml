@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   path_provider: ^2.0.1
+  easy_loader: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -56,9 +57,11 @@ flutter:
      - assets/lucifer.jpg
      - assets/lune.jpg
      - assets/minecraft.jpg
+     - assets/paris.jpg
      - assets/quizz_cover.jpg
      - assets/true.png
      - assets/twitter.jpg
+     - assets/questions.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

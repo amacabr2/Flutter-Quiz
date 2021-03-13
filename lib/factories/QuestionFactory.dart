@@ -1,20 +1,21 @@
+import 'dart:convert';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_quizz/models/Question.dart';
-import 'package:flutter_quizz/utils/StorageUtils.dart';
 
-bool parseBool(String text) => text.toLowerCase() == 'true';
+Future<String> getJson() {
+  return rootBundle.loadString('assets/questions.json');
+}
 
 class QuestionFactory {
-  final StorageUtils storage = new StorageUtils('questions.txt');
-  List<Question> _questions;
-
-  QuestionFactory() {
-    storage.read().then((List<String>lines) => {
-      lines.forEach((String line) {
-        List<String> question = line.split(' | ');
-        _questions.add(new Question(question[0], parseBool(question[1]), question[2], question[3]));
-      })
+  static Future<List<Question>> get questions {
+    return getJson().then((String data) {
+      Iterable questionsData = jsonDecode(data);
+      return List<Question>.from(questionsData.map((json) => new Question(
+          json['question'],
+          json['response'],
+          json['explanation'],
+          json['image']
+      )).toList());
     });
   }
-
-  List<Question> get questions => _questions;
 }

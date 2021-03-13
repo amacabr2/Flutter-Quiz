@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Paris est la capitale de la Franche ?",
+    "response" : true,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "paris.jpg"
+  },
+  {
+    "question": "Les BCAA sont des acides amin�s essentiels en Musculation ?",
+    "response" : true,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "bccaa.jpg"
+  },
+  {
+    "question": "Limoges est la plus grande ville du monde ?",
+    "response" : false,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "limoges.jpg"
+  },
+  {
+    "question": "La lune est une plan�te ?",
+    "response" : false,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "lune.jpg"
+  },
+  {
+    "question": "Twitter est le r�seau social le plus utilis� ?",
+    "response" : false,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "twitter.jpg"
+  },
+  {
+    "question": "Flutter est un langage de programmation ?",
+    "response" : false,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "flutter.jpg"
+  },
+  {
+    "question": "Minecraft est un jeu vid�o ?",
+    "response" : true,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "minecraft.jpg"
+  },
+  {
+    "question": "Lucifer est une s�rie original Netflix ?",
+    "response" : true,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "lucifer.jpg"
+  },
+  {
+    "question": "Louis XVI s'est suicid� ?",
+    "response" : false,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "louisxvi.jpg"
+  },
+  {
+    "question": "Les prochains JO seront � Paris ? ",
+    "response" : true,
+    "explanation": "Et oui, Paris est bien notre capitale",
+    "image": "jo.jpg"
+  }
+]
