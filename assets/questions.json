@@ -1,62 +1,62 @@
 [
   {
-    "question": "Paris est la capitale de la Franche ?",
+    "question": "Paris est la capitale de la France ?",
     "response" : true,
     "explanation": "Et oui, Paris est bien notre capitale",
     "image": "paris.jpg"
   },
   {
-    "question": "Les BCAA sont des acides amin�s essentiels en Musculation ?",
+    "question": "Les BCAA sont des acides aminés essentiels en Musculation ?",
     "response" : true,
-    "explanation": "Et oui, Paris est bien notre capitale",
+    "explanation": "Les BCAA aide à la récupération musculaire",
     "image": "bcaa.jpg"
   },
   {
-    "question": "Limoges est la plus grande ville du monde ?",
+    "question": "Krilin est la première personne que Goku rencontre dans Dragon Ball",
     "response" : false,
-    "explanation": "Et oui, Paris est bien notre capitale",
-    "image": "limoges.jpg"
+    "explanation": "Il rencontre en premier Bulma",
+    "image": "krilin.jpeg"
   },
   {
-    "question": "La lune est une plan�te ?",
+    "question": "La lune est une planète ?",
     "response" : false,
-    "explanation": "Et oui, Paris est bien notre capitale",
+    "explanation": "C'est le satellite naturel de la terre",
     "image": "lune.jpg"
   },
   {
-    "question": "Twitter est le r�seau social le plus utilis� ?",
+    "question": "Twitter est le réseau social le plus utilisé ?",
     "response" : false,
-    "explanation": "Et oui, Paris est bien notre capitale",
+    "explanation": "C'est pas lui !",
     "image": "twitter.jpg"
   },
   {
     "question": "Flutter est un langage de programmation ?",
     "response" : false,
-    "explanation": "Et oui, Paris est bien notre capitale",
+    "explanation": "Flutter est un kit de développement, un framework.",
     "image": "flutter.jpg"
   },
   {
-    "question": "Minecraft est un jeu vid�o ?",
+    "question": "Minecraft est un jeu vidéo ?",
     "response" : true,
-    "explanation": "Et oui, Paris est bien notre capitale",
+    "explanation": "Très cubique à mon gout",
     "image": "minecraft.jpg"
   },
   {
-    "question": "Lucifer est une s�rie original Netflix ?",
+    "question": "Il y a deux Gohan dans Dragon Ball",
     "response" : true,
-    "explanation": "Et oui, Paris est bien notre capitale",
-    "image": "lucifer.jpg"
+    "explanation": "Et oui, le grand-père adoptif de Goku et son fils ainé :)",
+    "image": "gohan.jpeg"
   },
   {
-    "question": "Louis XVI s'est suicid� ?",
+    "question": "Louis XVI s'est suicidé ?",
     "response" : false,
-    "explanation": "Et oui, Paris est bien notre capitale",
+    "explanation": "On l'a attrapé et coupé la tête",
     "image": "louisxvi.jpg"
   },
   {
     "question": "Les prochains JO seront � Paris ? ",
     "response" : true,
-    "explanation": "Et oui, Paris est bien notre capitale",
+    "explanation": "Oui et ses era en 2024",
     "image": "jo.jpg"
   }
 ]

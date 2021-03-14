@@ -64,7 +64,7 @@ class _QuizzState extends State<Quizz> {
 
   ElevatedButton _responseBtn(bool b) {
     return button(
-        b ? "Vrai" : "False",
+        b ? "Vrai" : "Faux",
         b ? Colors.green : Colors.red,
         () => _dialog(b)
     );
@@ -132,13 +132,14 @@ class _QuizzState extends State<Quizz> {
                 child: new Container(
                   height: size,
                   width: size,
-                  child: Image.asset('assets/${_question.image}'),
+                  child: Image.asset('assets/${_question.image}', fit: BoxFit.cover),
                 ),
               ),
               new TextUtils(
                   _question.question,
                   color: Colors.grey[500],
-                  textScaleFactor: 1.1
+                  textScaleFactor: 1.1,
+                  textAlign: TextAlign.center,
               ),
               new Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
