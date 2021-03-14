@@ -1,5 +1,7 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
+import 'package:flutter_quizz/components/Button.dart';
+import 'package:flutter_quizz/components/ErrorIcon.dart';
+import 'package:flutter_quizz/components/LoadingIcon.dart';
 import 'package:flutter_quizz/factories/QuestionFactory.dart';
 import 'package:flutter_quizz/models/Question.dart';
 import 'package:flutter_quizz/utils/TextUtils.dart';
@@ -20,6 +22,18 @@ class _QuizzState extends State<Quizz> {
 
   final Future<List<Question>> _initQuestions = QuestionFactory.questions;
 
+  ElevatedButton _responseBtn(bool b) {
+    return button(
+        b ? "Vrai" : "False",
+        b ? Colors.green : Colors.red,
+        () => _dialog(b)
+    );
+  }
+
+  Future<Null> _dialog (bool b) async {
+
+  }
+
   @override
   Widget build(BuildContext context) {
     double size  = MediaQuery.of(context).size.width * 0.5;
@@ -35,8 +49,6 @@ class _QuizzState extends State<Quizz> {
 
           if (snapshot.hasData) {
             _question = snapshot.data[_index];
-            log('---snapshot---');
-            log(_question.question);
             children = <Widget>[
               new TextUtils('Question #${_index + 1}', color: Colors.grey[900]),
               new TextUtils('Score : $_score / $_index', color: Colors.grey[900]),
@@ -47,34 +59,24 @@ class _QuizzState extends State<Quizz> {
                   width: size,
                   child: Image.asset('assets/${_question.image}'),
                 ),
+              ),
+              new TextUtils(
+                  _question.question,
+                  color: Colors.grey[500],
+                  textScaleFactor: 1.1
+              ),
+              new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  _responseBtn(true),
+                  _responseBtn(false),
+                ],
               )
             ];
           } else if (snapshot.hasError) {
-            log(snapshot.toString());
-            log(snapshot.error.toString());
-            children = <Widget>[
-              Icon(
-                Icons.error_outline,
-                color: Colors.red,
-                size: 60,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 16),
-                child: Text('Error: ${snapshot.error}'),
-              )
-            ];
+            children = errorIcon(snapshot);
           } else {
-            children = const <Widget>[
-              SizedBox(
-                child: CircularProgressIndicator(),
-                width: 60,
-                height: 60,
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 16),
-                child: Text('Awaiting result...'),
-              )
-            ];
+            children = loadingIcon();
           }
 
           return new Center(

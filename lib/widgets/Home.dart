@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_quizz/components/Button.dart';
 import 'package:flutter_quizz/widgets/Quizz.dart';
 
 class Home extends StatefulWidget {
@@ -36,19 +37,7 @@ class _HomeState extends State<Home> {
                 child: new Image.asset('assets/quizz_cover.jpg', fit: BoxFit.cover),
               ),
             ),
-            new ElevatedButton(
-                onPressed: _onPressed,
-                child: Text('Démarrer le quizz'),
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.green,
-                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
-                  textStyle: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white
-                  )
-                )
-            )
+            button('Démarrer le quizz', Colors.green, _onPressed)
           ],
         ),
       ),

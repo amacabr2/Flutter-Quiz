@@ -7,13 +7,4 @@ class Question {
   String image;
 
   Question(this.question, this.response, this.explanation, this.image);
-
-  Question.fromJson(json) {
-    Question(
-      json['question'],
-      json['response'],
-      json['explanation'],
-      json['image'],
-    );
-  }
 }
